@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <section class="search-section">
+    <input type="text" id="cityInput" placeholder="Enter City Name">
+    <button onclick="getWeather()">Get Weather</button>
+  </section>
+
+  <section class="weather-info" id="weatherInfo"></section>
+
+  <section class="carousel">
+    <h2>Weather Mood Gallery</h2>
+    <div class="carousel-container">
+      <button class="prev" onclick="prevImage()">❮</button>
+      
+      <img id="carouselImage" src="https://source.unsplash.com/400x300/?weather" alt="weather">
+
+      <button class="next" onclick="nextImage()">❯</button>
+    </div>
+  </section>
+
+
+
+
+  <section class="quiz-section">
+  <h2>Test Your Weather Knowledge!</h2>
+  <div id="quiz-container"></div>
+  <button onclick="nextQuestion()">Next Question</button>
+  <p id="quiz-result"></p>
+</section>
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
